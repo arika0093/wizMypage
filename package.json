@@ -1,0 +1,26 @@
+{
+  "name": "mockup_webslide",
+  "version": "0.0.1",
+  "description": "mockup my profile with webslide/parcel/riot.js",
+  "main": "1.js",
+  "scripts": {
+    "start": "parcel index.jade",
+    "upload": "npm run build && npm run now",
+    "build": "rm -rf dist/* && parcel build index.jade && xcopy static /S /E dist\\static\\",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "now": "cd dist/ && now && now alias wizmypage && now rm dist --safe --yes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "numeral": "^2.0.6",
+    "parcel": "^1.11.0",
+    "parcel-plugin-riot": "^2.0.0",
+    "pug": "^2.0.3",
+    "riot": "^3.13.2",
+    "sugar": "^2.0.6"
+  }
+}

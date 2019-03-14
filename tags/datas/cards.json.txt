@@ -1,0 +1,9 @@
+JSON.stringify(Cards.filter(e => e.islegend).map(e => {
+	return {
+		"cardno": e.cardno,
+		"name": e.name,
+		"alias": e.alias,
+		"imageno": e.imageno,
+		"prefix": e.imageno_prefix
+	}
+}));
